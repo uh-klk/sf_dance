@@ -1,0 +1,12 @@
+<Behaviour id="Happy" type="Expressive" userPreference="0">
+  <Channel id="base_dance" m_value1="0" m_value2="-10" m_value3="+10">  
+    <Seq1>
+      <S0 mode="0"   value="-15"    />
+      <S1 mode="0"   value="30"     />
+      <S2 mode="0"   value="-30"    />
+      <S3 mode="0"   value="30"     />
+      <S4 mode="0"   value="-15"    />
+    </Seq1>  
+  </Channel>
+</Behaviour>
+

@@ -1,0 +1,12 @@
+<Behaviour id="Excited" type="Expressive" userPreference="0">
+  <Channel id="base_dance" m_value1="0" m_value2="-10" m_value3="+10">  
+    <Seq1>
+      <S0 mode="1"   value="40"    />
+      <S1 mode="1"   value="-80"   />
+      <S2 mode="1"   value="80"    />
+      <S3 mode="1"   value="-80"   />
+      <S4 mode="1"   value="40"    />
+    </Seq1>  
+  </Channel>
+</Behaviour>
+
