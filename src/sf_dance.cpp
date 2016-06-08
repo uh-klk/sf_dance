@@ -110,12 +110,18 @@ void SFDance::sendDanceSequences(std::vector<Behaviour> *dance_sequences)
     publisher_.publish(msg);
 }
 
-int main(int argc, char** argv)
+int main(int argc, char* argv[])
 {
+    string danceXML_path = "behaviourXML/dance/"; //default path
+
     ros::init(argc, argv, "sf_dance");
     ros::NodeHandle n(std::string("~"));
+    
+    n.getParam("danceXML_path",danceXML_path);    //load the param from launch file into the variable
 
-    SFDance *sf_dance = new SFDance("behaviourXML/dance", n);
+    ROS_INFO("%s", danceXML_path.c_str());
+
+    SFDance *sf_dance = new SFDance(danceXML_path, n);
     sf_dance->init(); //init subscriber and publisher
 
     ros::Rate loop_rate(100);

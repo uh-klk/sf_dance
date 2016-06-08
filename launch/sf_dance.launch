@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="sf_dance" type="sf_dance" name="sf_dance" output="screen">
+       <param name="danceXML_path" value="$(find sf_dance)/src/behaviourXML/dance/" />
+       <remap from="/RosAria/aria_dance_sequence" to="/sf_aria_driver/aria_dance_sequence" />
+    </node>
+</launch>
